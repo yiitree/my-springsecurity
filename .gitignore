@@ -28,6 +28,7 @@ hs_err_pid*
 ### Example user template
 
 # IntelliJ project files
+target
 .idea
 *.iml
 out
