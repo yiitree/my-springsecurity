@@ -25,7 +25,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 //form中密码输入框input的name名，不修改的话默认是password
                 .passwordParameter("password")
                 //登录认证成功后默认转跳的路径，"/"在spring boot应用里面作为资源访问的时候比较特殊，它就是“/index.html”.所以defaultSuccessUrl登录成功之后就跳转到index.html
-                .defaultSuccessUrl("/")
+                .defaultSuccessUrl("/index.html")
             .and()
                 .authorizeRequests()
                 // 不需要通过登录验证就可以被访问的资源路径
